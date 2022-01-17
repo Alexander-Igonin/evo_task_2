@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Users list
+{% endblock %}
+
+{% block body %}
+
+
+  <h1>Список пользователей</h1>
+
+  {% for elem in users %}
+    <p>{{ elem.user }}</p>
+  {% endfor %}
+
+
+{% endblock %}
