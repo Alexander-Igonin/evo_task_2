@@ -12,7 +12,7 @@ class Users(db.Model):
     user = db.Column(db.String(20), nullable=False)
 
 
-@app.route('/login', methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
 def index():
     if request.method == 'POST':
         for elem in Users.query.all():
