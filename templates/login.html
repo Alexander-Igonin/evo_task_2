@@ -6,11 +6,12 @@ Main page
 
 {% block body %}
 
-<form class="box"  method="post">
-  <h1>Введите имя</h1>
-  <input type="text" name="user" id="user" placeholder="Username">
-  <input type="submit" name="" value="Login">
-</form>
-<a href="/users-list">Список пользователей</a>
+    <form class="box" method="post">
+      <h1>Введите имя</h1>
+      <input class="text-field" type="text" name="user" id="user" placeholder="Username">
+      <input type="submit" name="" value="Приветствовать">
+      <a href="/users-list">Список пользователей</a>
+    </form>
+
 
 {% endblock %}

@@ -7,11 +7,11 @@ Users list
 {% block body %}
 
 
-  <h1>Список пользователей</h1>
 
+<div class="users-list">
   {% for elem in users %}
     <p>{{ elem.user }}</p>
   {% endfor %}
-
+</div>
 
 {% endblock %}
